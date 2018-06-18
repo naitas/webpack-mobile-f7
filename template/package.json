@@ -12,6 +12,7 @@
     "test": "{{#unit}}npm run unit{{/unit}}{{#unit}}{{#e2e}} && {{/e2e}}{{/unit}}{{#e2e}}npm run e2e{{/e2e}}"{{/if_or}}{{#lint}},
     "lint": "eslint --ext .js,.vue src{{#unit}} test/unit/specs{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}"{{/lint}},
     "cordova-build": "npm run build && cordova build",
+    "cordova-build-release": "npm run build && cordova build --release",
     "cordova-run": "npm run build && cordova run browser",
     "cordova-run-ios": "npm run build && cordova run ios",
     "cordova-run-android": "npm run build && cordova run android"
@@ -19,7 +20,9 @@
   "dependencies": {
     "framework7": "^1.5.2",
     "framework7-vue": "^0.9.6",
-    "vue": "^2.1.0"
+    "vue": "^2.1.0",
+    "vue-cordova": "^0.1.2",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
