@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "framework7": "^1.5.2",
-    "framework7-vue": "^0.7.6",
+    "framework7-vue": "^0.9.6",
     "vue": "^2.1.0"
   },
   "devDependencies": {
